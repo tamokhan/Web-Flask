@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="shortcut icon" type="x-icon" href="{{ url_for('static', filename='images/icon-tab.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <!-- ------------------Section Navbar -------------------------->
+  <img src="{{ url_for('static', filename='images/mosque1.jpg') }}" class="d-block w-100">
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/logo.png') }}"> </a> -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">প্রচ্ছদ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">পরিচিতি</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/info">ইতিহাস</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/objective">লক্ষ্য ও উদ্দেশ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">যোগাযোগ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/notice">প্রজ্ঞপ্তি</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/admin/dashboard">Admin Panel</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/test">টেস্ট</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Main Section -->
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+
+  <!---------------------Section 5 Social Media------------------------->
+  <section id="social-media">
+    <div class="container text-center">
+      <p>FIND US ON SOCIAL MEDIA</p>
+      <div class="social-icon">
+        <a href="https://www.facebook.com/search/top?q=telnet%20communication%20ltd." target="_blank"><img
+            src="{{ url_for('static', filename='images/facebook-icon.png') }}"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/instagram-icon.png') }}"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/twitter-icon.png') }}"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/whatsapp-icon.png') }}"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/linkedin-icon.png') }}"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/snapchat-icon.png') }}"></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!---------------------Section 6 Footer Section------------------------->
+
+  <section id="footer">
+    <!-- <img src="{{ url_for('static', filename='images/wave2.png') }}" class="footer-img"> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-box">
+          <img src="{{ url_for('static', filename='images/logo.png') }}">
+          <p>Telnet is an ISP<br>Provide secure and smooth connection </p>
+        </div>
+
+        <div class="col-md-4 footer-box">
+          <p><b>CONTACT US</b></p>
+          <p><i class="bi bi-geo-alt-fill"></i> House:39, Sector- 07, Uttara, Dhaka</p>
+          <p><i class="bi bi-telephone"></i> +880 1713488899</p>
+          <p><i class="bi bi-envelope"></i> support@telent.com.bd</p>
+        </div>
+
+        <div class="col-md-4 footer-box">
+          <p>Telnet is an ISP<br>Provide secure and smooth connection </p>
+        </div>
+
+      </div>
+      <div>
+        <hr>
+        <p class="copyright"><b>Copyright </b><i class="bi bi-c-circle"></i> 2022 NS (Telnet Communication Ltd.). All
+          rights reserved.</p>
+      </div>
+
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

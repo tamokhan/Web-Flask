@@ -1,0 +1,52 @@
+{% extends "admin/templates/base.html" %}
+{% block title%}Admin::DashBoard{%endblock%}
+
+{% block main %}
+<p>User ID: {{userid}}    <a href="/logout"><button class="btn btn-danger">Logout</button></a>  </p>
+
+<!-- Section Notice File Modify -->
+<section id="noticefile" class="bg-light">
+  <div class="container ">
+    <h1 class="title text-center">Notice Files Modify</h1>
+    <p class="banglafont">Nonice File(প্রজ্ঞপ্তি) extention file must be pdf formet</p>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="fs-3">Upload notice  files: <br></p>
+        <form action="/admin/uploadnoticefile" method="post" enctype="multipart/form-data">
+          <input type="file" name="nfile">
+          <input type="submit" value="Upload" class="btn btn-primary">
+        </form>
+      </div>
+      <div class="col-md-6 ">
+        <p class="fs-3">List of notice files: <br></p>
+        <ul>
+          {% for notice in notices %}
+          <li>
+            <p style="display:inline">{{notice}}</p>
+            <a href="/admin/deletenoticefile/{{notice}}"><button class="btn btn-danger">DELETE</button></a>
+            <p></p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pagefile" class="bg-light">
+  <div class="container ">
+    <h1 class="title text-center">Pages Files Modify</h1>
+    <p class="h4">For page update filename & extention must be as follow:</p>
+    <p class="banglafont">পরিচিতি(introduction.txt), ইতিহাস(history.txt), লক্ষ্য ও উদ্দেশ্য(objective.txt)</p>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="fs-3">Upload Pages  files: <br></p>
+        <form action="/admin/pagefile" method="post" enctype="multipart/form-data">
+          <input type="file" name="pagefile">
+          <input type="submit" value="Upload" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@500&family=Tiro+Bangla&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+/* Banglafont connect through google font by @import (in 1st line) */
+.banglafont {
+    font-family: 'Noto Serif Bengali', serif;
+}
+/* Nav Bar Session */
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+} 
+.navbar{
+    background-image: linear-gradient(to right, #4c9469,#032b1a);
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height: 60px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+}
+
+.navbar-nav{
+    padding: 0 10px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: white !important;
+    font-weight: 300;
+    
+    float: right;
+    text-align: left;    
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+.nav-link:hover{
+    /* background: #178255 ; */
+    transform: scale(1.2);
+}
+/*-----------Banner Section----------*/
+#banner{
+    background-image: linear-gradient(to right, #adc2bc,#178255);
+    color: white;
+    padding-top: 5%;
+}
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0px; /*Change to  100px to bring text middle*/
+
+}
+.play-btn{
+    width: 45px;
+    margin: 20px;
+}
+#banner a{
+    color: white;
+    text-decoration: none;
+}
+.bottom-img{
+    width: 100%;
+}
+
+/*--------Section 3 Service-----------*/
+#service{
+    padding: 80px;
+}
+.service-img{
+    width: 100px;
+    margin-top: 20px;
+}
+.services{
+    padding: 20px;
+}
+.services h4{
+    padding: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.services a{
+    color: midnightblue;
+    text-decoration: none;/*Remove underline from a tag*/
+}
+
+.services a:hover{
+    color: red;
+    text-shadow: 1px 1px midnightblue;
+}
+.title::before{
+    content: '';
+    background: #71b599;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(64px);
+}
+.title::after{
+    content: '';
+    background: #71b599;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #adc2bc,#178255);
+
+}
+
+/* -------Section 3 Choose Us------- */
+#choose-us{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#choose-us ul li{
+    margin: 10px 0;
+}
+#choose-us ul{
+    margin-left: 20px;
+}
+/*---------Section-4-Testimonials---------*/
+#testimonials{
+    margin: 100px 0;
+}
+.testimonials{
+    border-left: 4px solid #178255;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+
+}
+/*---------------Section-5-SocialMedia-------------------------*/
+#social-media{
+    background-color: #f8f9fa;
+    padding: 35px 0;    
+}
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icon img{
+    width: 60px;
+    transition: 0.25s;
+}
+.social-icon a:hover img{
+    transform: translateY(-10px);
+}
+/*---------------Section-6-Footer-------------------------*/
+#footer{
+    background-image: linear-gradient(to right,  #4c9469,#032b1a); 
+    color: #fff;
+
+}
+.footer-img{
+    width: 100%;
+}  
+.footer-box{
+    padding: 20px;
+}
+.footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-box .bi{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 10px;
+    width: 40px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 3px;
+    color: red;
+    background-image: linear-gradient(to right, #4c9469,#032b1a);
+}
+hr{
+    background-color: white;
+  
+}
+.copyright{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* About Section Paragraph */
+
+.par {
+    white-space: pre-line;
+  }
+
+/* Notice Section */
+#notice {
+    padding-top: 40px;
+    padding-left: 10px;  
+}
+
+#notice p{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+#notice li{
+    margin-left: 3px;
+}
+
+/* Login Page CSS */
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }

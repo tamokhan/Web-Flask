@@ -1,0 +1,33 @@
+{% extends "public/templates/base.html" %}
+{% block title%}About Page{%endblock%}
+
+{% block main %}
+  <!--------------------Section-4-Testimonials--------------------------->
+  <section id="testimonials">
+    <div class="container">
+      <div class="row"> <!--Offect-1 class provide inn center by +2 booths side (5+5 +2) -->
+        <div class="col-md-10">
+        <h1 class="text-center banglafont">দারুল উলূম হাটহাজারী’র সংক্ষিপ্ত পরিচিতি</h1>
+        </div>
+      </div>
+      <div class="row"> <!--Offect-1 class provide inn center by +2 booths side (5+5 +2) -->
+        <div class="col-md-12">
+          <p class="par banglafont">
+            {{content}}
+          </p>
+        </div>
+  
+        <!-- <div class="col-md-6 testimonials">
+          <p>Very good support, get any kind of network
+            solution. Letency is very low. Smooth network.
+          </p>
+          <p class="user-details"><b>Saiful</b><br>Director at xyz</p>
+        </div> -->
+      </div>
+    </div>
+  
+      </section>
+  
+
+
+{% endblock %}
